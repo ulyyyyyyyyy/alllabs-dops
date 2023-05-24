@@ -5,10 +5,10 @@ with Image.open(name) as img:
     img.load()
 
 
-width, heigth = img.size
+width, height = img.size
 print(img.size)
 
-img = img.crop((0, 0, width, heigth-1250))
+img = img.crop((0, 0, width, height - 1250))
 img2 = img.save("peiobr.jpg")
 img.crop=img.show()
 
