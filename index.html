@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дашборд</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Добро пожаловать!</h1>
+
+    <div class="dashboard">
+        <div class="widget" draggable="true" data-type="weather">
+            <h3>🌤️ Погода</h3>
+            <div id="weather-content" class="content"></div>
+        </div>
+
+        <div class="widget" draggable="true" data-type="dogs">
+            <h3>🐶 Случайные собаки</h3>
+            <div class="dogs-container">
+                <div class="dog-image-wrapper">
+                    <img id="dog-image" src="" alt="Случайная собака">
+                </div>
+                <div class="dog-controls">
+                    <button id="refresh-dog">Другая собака</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

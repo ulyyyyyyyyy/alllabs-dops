@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Mono', monospace;
+    overflow-x: hidden;
+}
+
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    color: white;
+}
+
+.top-text {
+    font-family: 'PT Mono', monospace;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    margin-top: 50vh;
+    mix-blend-mode: difference;
+    
+}
+
+.main-title {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 227px;
+    font-weight: 200;
+    line-height: 0.9;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+.description {
+    font-family: 'PT Mono', monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 1100px;
+    
+    text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+    .main-title {
+        font-size: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 120px;
+    }
+    
+    .top-text {
+        font-size: 20px;
+    }
+    
+    .top-container {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 80px;
+    }
+    
+    .top-text {
+        font-size: 16px;
+    }
+    
+    .description {
+        font-size: 14px;
+    }
+    
+    .top-container {
+        padding-top: 20px;
+    }
+    
+    .content-container {
+        margin-top: 8vh;
+    }
+}
